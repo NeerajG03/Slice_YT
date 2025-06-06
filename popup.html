@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Video Downloader</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>YouTube Video Downloader</h2>
+    <div id="videoInfo">
+      <p><strong>Title:</strong> <span id="videoTitle">Loading...</span></p>
+    </div>
+    <div class="form-group">
+      <label for="qualitySelect">Select Quality:</label>
+      <select id="qualitySelect">
+        <option value="">Loading...</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="startTime">Start Time (ss or mm:ss):</label>
+      <input type="text" id="startTime" placeholder="e.g., 30 or 1:20">
+    </div>
+    <div class="form-group">
+      <label for="endTime">End Time (ss or mm:ss):</label>
+      <input type="text" id="endTime" placeholder="e.g., 180 or 3:00">
+    </div>
+    <div class="slicing-note">Note: Video slicing is currently not functional. Full video will be downloaded.</div>
+    <button id="downloadButton">Download</button>
+    <p id="status"></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
